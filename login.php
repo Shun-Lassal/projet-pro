@@ -47,7 +47,7 @@
         <input type="password" class="form-control" id="password" placeholder="Mot de passe">
     </div>
     <button class="w-100 btn btn-lg btn-danger" id="button" type="button">Se connecter</button>
-    <a class="w-100 btn btn-lg btn-light text-decoration-none" href="index.html">Retour au site</a>
+    <a class="w-100 btn btn-lg btn-light text-decoration-none" href="index.php">Retour au site</a>
 </form>
 
 </main>

@@ -22,13 +22,14 @@ if (isset($_POST['modifier'])) {
     header("location: articles.php");
 
 } else if (isset($_POST['ajouter'])) {
+    $date = date("d/m/y");
     $titre = $_POST['titre'];
     $description = $_POST['description'];
     $description = htmlspecialchars($description);
     $photo = $_POST['photo'];
 
     $dbh = new PDO('mysql:host=localhost;dbname=laboucherieduvillage', 'root', '');
-    $sth = $dbh->prepare("INSERT INTO `article` (`id`, `titre`, `description`, `photo`) VALUES ('', '$titre', '$description', '$photo')");
+    $sth = $dbh->prepare("INSERT INTO `article` (`id`, `titre`, `description`, `photo`, `date`) VALUES (NULL, '$titre', '$description', '$photo', '$date');");
     $sth->execute();
     header("location: articles.php");
 

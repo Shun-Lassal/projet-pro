@@ -10,6 +10,9 @@
     <title>Panel Admin - Accueil</title>
 </head>
 <body>
+    <?php
+        include("../fonctions/session.php");
+    ?>
     <div class="mob">
         <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-gray height100 sidebar">
             <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none dispnone">
@@ -19,41 +22,41 @@
             <hr>
             <ul class="nav nav-pills flex-column mb-auto dispnone">
             <li class="nav-item dispnone">
-                <a href="#" class="nav-link text-white active dispnone" aria-current="page">
+                <a href="accueil.php" class="nav-link text-white active dispnone" aria-current="page">
                 Accueil
                 </a>
             </li>
             <li>
-                <a href="#" class="nav-link text-white dispnone">
+                <a href="articles.php" class="nav-link text-white dispnone">
                 Articles
                 </a>
             </li>
             <li>
-                <a href="#" class="nav-link text-white dispnone">
+                <a href="photos.php" class="nav-link text-white dispnone">
                 Photos
                 </a>
             </li>
             <li>
-                <a href="#" class="nav-link text-white dispnone">
+                <a href="reservations.php" class="nav-link text-white dispnone">
                 Réservations
                 </a>
             </li>
             </ul>
             <hr>
-            <a href="" class="nav-link text-white dispnone">Retour au site</a>
+            <a href="../fonctions/deconnexion.php" class="nav-link text-white dispnone">Retour au site</a>
         </div>
 
         <div class="container d-flex flex-column justify-content-center">
             <h1 class="text-center m-5 fs-2">Bienvenue sur le panel administrateur</h1>
             <p class="text-center fs-4">Que souhaitez-vous faire ?</p>
             <div class="align-self-center">
-                <a class="col m-2" href=""><button class="btn btn-lg btn-outline-danger">Gérer mes articles</button></a>
-                <a class="col m-2" href=""><button class="btn btn-lg btn-outline-danger">Gérer mes photos</button></a>
-                <a class="col m-2" href=""><button class="btn btn-lg btn-outline-danger">Gérer mes commandes</button></a>
+                <a class="col m-2" href="articles.php"><button class="btn btn-lg btn-outline-danger">Gérer mes articles</button></a>
+                <a class="col m-2" href="photos.php"><button class="btn btn-lg btn-outline-danger">Gérer mes photos</button></a>
+                <a class="col m-2" href="reservations.php"><button class="btn btn-lg btn-outline-danger">Gérer mes commandes</button></a>
             </div>
 
             <div class="text-center mt-5">
-                <a href=""><button class="btn btn-secondary">Retourner au site</button></a>
+                <a href="../fonctions/deconnexion.php"><button class="btn btn-secondary">Retourner au site</button></a>
             </div>
         </div>
     </div>

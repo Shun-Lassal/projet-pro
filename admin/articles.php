@@ -10,6 +10,7 @@
     <title>Panel Admin - Accueil</title>
 </head>
 <body>
+    <?php include("../fonctions/session.php"); ?>
     <div class="mob">
         <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-gray height100 sidebar">
             <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none dispnone">
@@ -19,28 +20,28 @@
             <hr>
             <ul class="nav nav-pills flex-column mb-auto">
             <li class="nav-item dispnone">
-                <a href="#" class="nav-link text-white dispnone" aria-current="page">
+                <a href="accueil.php" class="nav-link text-white dispnone" aria-current="page">
                 Accueil
                 </a>
             </li>
             <li>
-                <a href="#" class="nav-link text-white active">
+                <a href="articles.php" class="nav-link text-white active">
                 Articles
                 </a>
             </li>
             <li>
-                <a href="#" class="nav-link text-white">
+                <a href="photos.php" class="nav-link text-white">
                 Photos
                 </a>
             </li>
             <li>
-                <a href="#" class="nav-link text-white">
+                <a href="reservations.php" class="nav-link text-white">
                 Réservations
                 </a>
             </li>
             </ul>
             <hr>
-            <a href="" class="nav-link text-white">Retour au site</a>
+            <a href="../fonctions/deconnexion.php" class="nav-link text-white">Retour au site</a>
         </div>
         <div class="container d-flex flex-column justify-content-center">
             <h1 class="text-center m-5 fs-2">Gérer mes articles</h1>
